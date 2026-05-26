@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Mail, Phone, Linkedin, Github, ExternalLink, Menu, X, Code2, Rocket, Award, Heart, Database, LucideIcon } from 'lucide-react';
+import MyProjects from './MyProjects';
 
 export default function Portfolio() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -339,63 +340,7 @@ export default function Portfolio() {
           </div>
         </section>
 
-        {/* Projects */}
-        <section id="projects" className="px-8 py-20 md:px-16 lg:px-24 bg-gradient-to-b from-gray-50 to-white">
-          <div className="max-w-6xl mx-auto">
-            <div className="inline-block mb-4 px-4 py-1 bg-[#D4B5A0]/10 rounded-full">
-              <p className="text-[#C9A589] text-sm font-semibold uppercase tracking-wide">Projects</p>
-            </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-12 text-gray-900">Featured Work</h2>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
-                <div className="h-48 bg-gradient-to-br from-[#D4B5A0] to-[#C9A589] relative overflow-hidden">
-                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all duration-300"></div>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <Code2 size={64} className="text-white opacity-50" />
-                  </div>
-                </div>
-                <div className="p-8">
-                  <h3 className="text-2xl font-bold mb-3 text-gray-900">ThriftStore E-Commerce</h3>
-                  <p className="text-gray-600 mb-6 leading-relaxed">
-                    Full-stack e-commerce platform with features like product browsing, cart management, and secure payment processing using Django and React.
-                  </p>
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    <span className="px-3 py-1 bg-[#D4B5A0]/20 text-[#8B6F47] rounded-full text-sm font-medium">Django</span>
-                    <span className="px-3 py-1 bg-[#D4B5A0]/20 text-[#8B6F47] rounded-full text-sm font-medium">React</span>
-                    <span className="px-3 py-1 bg-[#D4B5A0]/20 text-[#8B6F47] rounded-full text-sm font-medium">PostgreSQL</span>
-                  </div>
-                  <a href="https://github.com/ndaedxo/E-commerce-Web-App-2" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-[#C9A589] font-semibold hover:gap-3 transition-all duration-300">
-                    View Project <ExternalLink size={18} />
-                  </a>
-                </div>
-              </div>
-
-              <div className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
-                <div className="h-48 bg-gradient-to-br from-gray-700 to-gray-900 relative overflow-hidden">
-                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all duration-300"></div>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <Rocket size={64} className="text-white opacity-50" />
-                  </div>
-                </div>
-                <div className="p-8">
-                  <h3 className="text-2xl font-bold mb-3 text-gray-900">AI Customer Service Chatbot</h3>
-                  <p className="text-gray-600 mb-6 leading-relaxed">
-                    A modern, AI-powered customer service chatbot built with Next.js, OpenAI GPT-4, and Tailwind CSS for intelligent conversation handling.
-                  </p>
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    <span className="px-3 py-1 bg-[#D4B5A0]/20 text-[#8B6F47] rounded-full text-sm font-medium">Next.js</span>
-                    <span className="px-3 py-1 bg-[#D4B5A0]/20 text-[#8B6F47] rounded-full text-sm font-medium">OpenAI GPT-4</span>
-                    <span className="px-3 py-1 bg-[#D4B5A0]/20 text-[#8B6F47] rounded-full text-sm font-medium">TypeScript</span>
-                  </div>
-                  <a href="https://github.com/ndaedxo/AI-Powered-Customer-Service-Chatbot" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-[#C9A589] font-semibold hover:gap-3 transition-all duration-300">
-                    View Project <ExternalLink size={18} />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <MyProjects />
 
         {/* Education */}
         <section id="education" className="px-8 py-20 md:px-16 lg:px-24 bg-white">
