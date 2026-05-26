@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Mail, Phone, Linkedin, Github, ExternalLink, Menu, X, Code2, Rocket, Award, Heart, Database, LucideIcon } from 'lucide-react';
+import { Mail, Phone, Linkedin, Github, Menu, X, Code2, Rocket, Award, Heart, Database, LucideIcon } from 'lucide-react';
 import MyProjects from './MyProjects';
 
 export default function Portfolio() {
