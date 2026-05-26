@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Mail, Phone, Linkedin, Github, Menu, X, Code2, Rocket, Award, Heart, Database, LucideIcon } from 'lucide-react';
+import { Mail, Phone, Linkedin, Github, Menu, X, Code2, Rocket, Award, Heart, Database, Cpu, LucideIcon } from 'lucide-react';
 import MyProjects from './MyProjects';
 
 export default function Portfolio() {
@@ -308,7 +308,7 @@ export default function Portfolio() {
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-12 text-gray-900">Technical Expertise</h2>
 
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-xl border border-gray-200 hover:border-[#D4B5A0] transition-all duration-300">
                 <Code2 className="text-[#C9A589] mb-4" size={32} />
                 <h3 className="text-xl font-bold mb-4 text-gray-900">Frontend</h3>
@@ -326,6 +326,18 @@ export default function Portfolio() {
                 <h3 className="text-xl font-bold mb-4 text-gray-900">Backend</h3>
                 <div className="flex flex-wrap gap-2">
                   {['ASP.Net Core', 'Django', 'Flask', 'Python', 'Laravel', 'PHP'].map(skill => (
+                    <span key={skill} className="px-4 py-2 bg-[#D4B5A0]/10 text-gray-700 rounded-lg text-sm font-medium">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-xl border border-gray-200 hover:border-[#D4B5A0] transition-all duration-300">
+                <Cpu className="text-[#C9A589] mb-4" size={32} />
+                <h3 className="text-xl font-bold mb-4 text-gray-900">AI/ML & Data Science</h3>
+                <div className="flex flex-wrap gap-2">
+                  {['Python', 'Scikit-learn', 'Pandas', 'NumPy', 'Machine Learning', 'Data Wrangling', 'Model Development', 'Analytics'].map(skill => (
                     <span key={skill} className="px-4 py-2 bg-[#D4B5A0]/10 text-gray-700 rounded-lg text-sm font-medium">
                       {skill}
                     </span>
