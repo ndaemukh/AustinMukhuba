@@ -82,7 +82,7 @@ export default function Portfolio() {
 
           <div className="text-center mb-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-1">Ndaedzo Austin Mukhuba</h2>
-            <p className="text-sm text-gray-700 font-medium">Full Stack Developer</p>
+            <p className="text-sm text-gray-700 font-medium">AI/ML Engineer & Full Stack Developer</p>
           </div>
 
           {/* Navigation */}
@@ -152,8 +152,8 @@ export default function Portfolio() {
             <h1 className="text-6xl md:text-8xl font-bold mb-4 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
               NDAEDZO AUSTIN MUKHUBA
             </h1>
-            <p className="text-2xl md:text-3xl text-gray-300 mb-8">
-              Full Stack Developer & Solutions Architect
+               <p className="text-2xl md:text-3xl text-gray-300 mb-8">
+              AI/ML Engineer & Full Stack Developer
             </p>
             <div className="flex flex-wrap gap-4">
               <button
@@ -208,6 +208,26 @@ export default function Portfolio() {
             <h2 className="text-4xl md:text-5xl font-bold mb-12 text-gray-900">Work History</h2>
 
             <div className="space-y-8">
+              <div className="relative pl-8 pb-8 border-l-2 border-[#D4B5A0]">
+                <div className="absolute -left-2 top-0 w-4 h-4 bg-[#C9A589] rounded-full ring-4 ring-white"></div>
+                <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                  <div className="flex justify-between items-start mb-3 flex-wrap gap-2">
+                    <h3 className="text-2xl font-bold text-gray-900">AI/ML Engineer Graduate Trainee</h3>
+                    <span className="px-4 py-1 bg-[#D4B5A0]/20 text-[#8B6F47] text-sm font-semibold rounded-full">Feb 2026 - Present · 4 mos</span>
+                  </div>
+                  <p className="text-lg text-[#C9A589] font-semibold mb-4">BETSoftware · Full-time</p>
+                  <p className="text-gray-600 leading-relaxed mb-3">
+                    Joined as an AI/ML graduate trainee, gaining foundational experience applying machine learning in a commercial betting context. Contributed to projects spanning customer analytics, risk modelling, and automated reporting. Developed practical skills in Python, data wrangling, and model development while learning how AI-driven insights influence pricing, marketing, and compliance decisions. Worked alongside senior data scientists and engineers, building both technical ability and an understanding of how responsible, regulated businesses leverage data ethically.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-[#D4B5A0]/10 text-[#8B6F47] rounded-full text-sm font-medium">Python</span>
+                    <span className="px-3 py-1 bg-[#D4B5A0]/10 text-[#8B6F47] rounded-full text-sm font-medium">Machine Learning</span>
+                    <span className="px-3 py-1 bg-[#D4B5A0]/10 text-[#8B6F47] rounded-full text-sm font-medium">Data Wrangling</span>
+                    <span className="px-3 py-1 bg-[#D4B5A0]/10 text-[#8B6F47] rounded-full text-sm font-medium">Analytics</span>
+                  </div>
+                </div>
+              </div>
+
               <div className="relative pl-8 pb-8 border-l-2 border-[#D4B5A0]">
                 <div className="absolute -left-2 top-0 w-4 h-4 bg-[#C9A589] rounded-full ring-4 ring-white"></div>
                 <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
@@ -357,6 +377,7 @@ export default function Portfolio() {
                   <h3 className="text-xl font-bold text-gray-900 mb-1">BACHELOR OF COMPUTER AND INFORMATION SCIENCES</h3>
                   <p className="text-gray-600">IIE Varsity College</p>
                   <p className="text-sm text-gray-500 mt-1">Comprehensive degree covering computer science fundamentals, information systems, and modern development practices</p>
+                  <p className="text-sm font-semibold text-[#C9A589] mt-2">Graduated top of my class</p>
                 </div>
               </div>
             </div>
